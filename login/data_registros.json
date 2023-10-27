@@ -1,9 +1,0 @@
-[
-    {
-        "id": 1,
-        "nombre": "uriel",
-        "apellido": "turpo",
-        "contrasena": "$2y$10$LIjqZ6oWieYoOfFfnknYM.EQ00TC8kK3yruRu\/atjzBSqbFb78roq",
-        "salt": "bfb7574630b1732cd526de10f8c0f5fc"
-    }
-]
