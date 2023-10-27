@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #1e1f26;
+  font-family: "ROBOTO", sans-serif;
+}
+/*   menu    */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0px 40px;
+  background: linear-gradient( 90deg,#1e1f26,#22232b,#0e4063,#22232b,#1e1f26);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li{
+  margin: 0 25px;
+}
+
+.centro {
+  width: 60px;
+  height: 60px;
+}
+.sub {
+  width: 40px;
+  height: 40px;
+}
+.extremo {
+  width: 25px;
+  height: 25px;
+}
+
+.menu a:hover .centro,
+.menu a:hover .sub,
+.menu a:hover .extremo {
+  transform: scale(1.2);
+}
+
+/*                   contenido                */
+
+.contacto-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: cadetblue;
+  letter-spacing: 8px;
+  margin-top: 44px;
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #3cacc7;
+  font-size: 16px;
+  margin: 6px 0px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+
+/* Estilo para el botón de envío 3d */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 8px 12px;
+  min-width: 10em;
+}
+
+.button-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  padding: 8px 16px;
+  transform: translateY(0);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.button:active .button-top {
+  transform: translateY(6px);
+}
+.button-top::after {
+  content: "";
+  position: absolute;
+  z-index: -1; /* superposicion*/
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  background-image: radial-gradient(#5bda5b, #0f800b);
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.2),
+    0 1px 2px 1px rgba(255, 255, 255, 0.2);
+  transition-property: border-radius, padding, width, transform;
+  transition-duration: 0.2s;
+}
+.button:active .button-top::after {
+  border-radius: 6px;
+  padding: 0 2px;
+}
+
+.button-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 8px/16px 16px 8px 8px;
+  padding-top: 6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  box-sizing: content-box;
+  background-color: rgb(5, 83, 5);
+  background-image: radial-gradient(
+      4px 8px at 4px calc(100% - 8px),
+      rgba(255, 255, 255, 0.25),
+      transparent
+    ),
+    radial-gradient(
+      4px 8px at calc(100% - 4px) calc(100% - 8px),
+      rgba(255, 255, 255, 0.25),
+      transparent
+    ),
+    radial-gradient(16px at -4px 0, white, transparent),
+    radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5),
+    inset 0px -1px 3px 3px rgba(0, 0, 0, 0.4);
+  transition-property: border-radius, padding-top;
+  transition-duration: 0.2s;
+}
+.button:active .button-bottom {
+  border-radius: 10px 10px 8px 8px/8px;
+  padding-top: 0;
+}
+
+.button-base {
+  position: absolute;
+  z-index: -2;
+  top: 4px;
+  left: 0;
+  border-radius: 12px;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 2px 2px rgba(0, 0, 0, 0.25);
+}

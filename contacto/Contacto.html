@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"/>
+    <!--   link de btn 3d  -->
+    <link rel='stylesheet' href='https://codepen.io/nicolasjesenberger/pen/GRYvOWy/d5176f9552830811da3e2bde0120cc26.css'>
+    <!--   link estilo contacto -->
+    <link rel="stylesheet" href="contacto.css?v3" />
+  </head>
+  <body>
+    <header class="menu">
+      <ul>
+        <li><a href="#"><img class="extremo" src="../RECURSOS/iconos/gmail.png" alt="Gmail"></a></li>
+        <li><a href="#"><img class="sub" src="../RECURSOS/iconos/instagram.png" alt="Instagram"></a></li>
+        <li><a href="../Index.php"><img class="centro" src="../RECURSOS/iconos/inicio.png" alt="Inicio"></a></li>
+        <li><a href="#"><img class="sub" src="../RECURSOS/iconos/youtube.png" alt="youtube"></a></li>
+        <li><a href="#"><img class="extremo"src="../RECURSOS/iconos/facebook.png" alt="Facebook"></a></li>
+      </ul>
+    </header>
+    <main class="contacto-container">
+      <h1>Contactanos</h1>
+      <section class="formulario-contacto">
+        <form action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required/>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+
+          <div class="button-container">
+            <button class="button" type="submit" ontouchstart>
+              <div class="button-top">Enviar Mensaje</div>
+              <div class="button-bottom"></div>
+              <div class="button-base"></div>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!--          jquery    -->
+    <script src="../Index/jquery.js"></script>
+    <!--          contactos js        -->
+    <script src="contacto.js"></script>
+  </body>
+</html>

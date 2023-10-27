@@ -1,0 +1,110 @@
+/*          favoritos        */
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.contenido {
+  width: 360px;
+  height: 100%;
+}
+.Encabezado {
+  font-family: serif;
+  font-size: 34px;
+  margin-bottom: 9px;
+  color: #ff6000;
+  letter-spacing: 3px;
+}
+.favoritos-container {
+  display: flex;
+  box-shadow: inset 0px 6px 12px rgba(117, 111, 111, 0.267);
+  align-items: center;
+  padding: 15px 10px;
+}
+.favorito-foto {
+  border: 3px solid;
+  padding: 6px;
+  border-radius: 70px;
+  border-color: blanchedalmond;
+}
+.favorito-foto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.informacion-favoritos {
+  margin-left: 10px;
+}
+h2.favoritos-title {
+  color: white;
+  font-style: oblique;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+p.favoritos-subtitle {
+  color: darkgray;
+  font-size: 11px;
+  padding: 4px 0px;
+}
+
+/*          solicitudes        */
+.titulo-notificacion {
+  font-family: serif;
+  font-size: 34px;
+  margin-bottom: 9px;
+  color: #ff6000;
+  letter-spacing: 3px;
+}
+.solicitudes-container {
+  display: flex;
+  box-shadow: inset 0px 6px 12px rgba(117, 111, 111, 0.267);
+  align-items: center;
+  padding: 15px 10px;
+}
+.solicitudes-foto {
+  border: 3px solid;
+  padding: 6px;
+  border-radius: 70px;
+  border-color: #026102;
+}
+.solicitudes-foto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.informacion-solicitud {
+  margin-left: 10px;
+}
+h2.solicitudes-title {
+  color: white;
+  font-style: oblique;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+p.solicitudes-subtitle {
+  color: darkgray;
+  font-size: 11px;
+  margin-bottom: 9px;
+}
+p.solicitudes-mensaje {
+  color: chartreuse;
+  font-size: 14px;
+  font-family: auto;
+  margin-bottom: 16px;
+}
+.btn-mensaje {
+  margin: auto;
+}
+.btn-mensaje button {
+  margin: 0px 9px;
+  padding: 3px 9px;
+  background: #9150d5de;
+  border: none;
+  border-radius: 5px;
+  font-family: cursive;
+  font-weight: 700;
+  color: black;
+}
+.btn-mensaje button:hover {
+  background: #83c1a2de;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar</title>
+    <!-- Estilos cerrar sesion -->
+    <link rel="stylesheet" href="../principal/cerrar-sesion.css" />
+    <!-- Estilos de Principal -->
+    <link rel="stylesheet" href="../principal/principal.css" />
+    <!-- Estilos de favoritos -->
+    <link rel="stylesheet" href="../principal/notificacion.css" />
+    <!-- Estilos de seccion buscar -->
+    <link rel="stylesheet" href="../principal/Buscar.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../RECURSOS/logo/logo.png" alt="" />
+        <h1>CYNUT</h1>
+      </div>
+      <div class="iconos">
+        <a href="../perfil de room/Perfil_Personal.html" id="pc1"></a>
+        <a href="#" id="pc2"></a>
+      </div>
+    </header>
+    <main>
+      <section class="submenu">
+        <div class="sb">
+          <ul>
+            <li class="item-1"><a href="principal.html"></a></li>
+            <li class="item-2"><a href="../principal/Buscar.html"></a></li>
+            <li class="item-3"><a href="javascript:void(0);" id="miEnlace"></a></li>
+            <li class="item-4"><a href="javascript:void(0);" id="miNotificacion"></a></li>
+            <li><p>≡ Filtrar</p></li>
+            <li class="item-6"><a href="#"></a></li>
+            <li class="item-7"><a href="#"></a></li>
+            <li class="item-8"><a href="#"></a></li>
+            <li class="item-9"><a href="#"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="content">
+        <div class="Buscar">
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar">
+            <button id="searchButton" onclick="buscar()"></button>
+          </div>
+          <div class="resultados" id="resultadosSection"></div>
+        </div>
+      </section>
+      <section class="detalles">
+        <div class="formato" id="item-4-content"></div>
+      </section>
+
+      <div class="overlay" id="mensaje-overlay">
+        <div class="mensaje" id="mensaje">
+            <div class="mensaje-contenido">
+              <h1>Desea salir: <strong>Erinson Ticona</strong>?</h1>
+              <p>Usted puede mejorar su seguridad aún más después de cerrar la sesión al cerrar este navegador abierto</p>
+            <aside>
+              <button id="aceptar-mensaje">Aceptar</button>
+                <button id="cancelar-mensaje">Cancelar</button>
+            </aside>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- jQuery -->
+    <script src="../cursor/jquery.js"></script>
+    <!-- JS de notificación (que crea la caja de búsqueda) -->
+    <script src="../principal/notificacion.js"></script>
+    <!-- JS de cerrar sesion -->
+    <script src="../principal/cerrar-sesion.js"></script>
+    <!-- js desarrollado (que contiene las funciones 3D y eventos) -->
+    <script src="../principal/Buscar.js"></script>
+      </script>
+  </body>
+</html>

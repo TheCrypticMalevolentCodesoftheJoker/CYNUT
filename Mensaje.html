@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería - Búsqueda de Compañeros de Departamento</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil_usuario.html">Mi Perfil</a></li>
+                <li><a href="buscar.html">Buscar Compañeros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cerrar_sesion.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        <h1>Mensajería</h1>
+    </header>
+    
+    <main class="mensajeria-container">
+        <section class="lista-mensajes">
+            <h2>Conversaciones</h2>
+            <ul>
+                <li>
+                    <a href="conversacion.html">
+                        <img src="perfil_companero1.jpg" alt="Foto de perfil">
+                        <h3>Nombre del Compañero 1</h3>
+                        <p>Último mensaje: Hola, ¿cómo estás?</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="conversacion.html">
+                        <img src="perfil_companero2.jpg" alt="Foto de perfil">
+                        <h3>Nombre del Compañero 2</h3>
+                        <p>Último mensaje: ¡Claro, podemos conocernos!</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="chat-activo">
+            <h2>Chat con Nombre del Compañero</h2>
+            <div class="mensajes">
+                <div class="mensaje-recibido">
+                    <p>Nombre del Compañero: ¡Hola! ¿Cómo estás?</p>
+                </div>
+                <div class="mensaje-enviado">
+                    <p>Tu Nombre: ¡Hola! Estoy bien, gracias.</p>
+                </div>
+            </div>
+            
+            <form action="enviar_mensaje.php" method="post">
+                <div class="campo">
+                    <label for="nuevo-mensaje">Nuevo Mensaje:</label>
+                    <textarea id="nuevo-mensaje" name="nuevo-mensaje" required></textarea>
+                </div>
+
+                <div class="boton-container">
+                    <button type="submit" class="boton">Enviar Mensaje</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Búsqueda de Compañeros de Departamento</p>
+    </footer>
+</body>
+</html>
